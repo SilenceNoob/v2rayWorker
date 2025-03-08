@@ -20,6 +20,9 @@ jobs:
     - name: Install modules
       run: npm i wrangler@latest
 
+    - name: Verify Wrangler installation
+      run: wrangler --version
+
     - name: Build
       run: npx wrangler build
 
